@@ -369,7 +369,7 @@ template {
 }
 
 .header {
-  background-image: url(assets/images/background2.png);
+  background-image: url(../assets/images/background2.png);
   background-position: 0px -30px;
   background-repeat: no-repeat;
   background-size: cover;
