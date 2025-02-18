@@ -27,6 +27,12 @@
     display: inline-flex;
     justify-content: center;
     margin-left: 10px;
+    scale: (1);
+    transition: all 1s;
+  }
+
+  &__phone:hover {
+    scale: (1.1);
   }
 
   &__title {
@@ -43,10 +49,16 @@
 
   &__phone-img {
     margin-right: 10px;
+    -webkit-transition: -webkit-transform 0.8s ease-in-out;
+    transition: transform 0.8s ease-in-out;
 
     @media (max-width: 1000px) {
       margin: 0px;
     }
+  }
+  &__phone-img:hover {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 
   &__phone-tel {
@@ -81,6 +93,7 @@
     align-items: center;
     gap: 40px;
     margin: 0 10px;
+
     @media (max-width: 1000px) {
       position: absolute;
       left: 0;
@@ -105,9 +118,19 @@
   &__item-link {
     color: $color-blue;
     font-family: $font-family-bold;
+
     @media (max-width: 1000px) {
       color: $color-white;
     }
+  }
+
+  &__item {
+    transition: all 3s;
+    scale: (1);
+  }
+
+  &__item:hover {
+    scale: (1.1);
   }
 
   &__menu-btn {
@@ -182,6 +205,11 @@
     margin-top: 90px;
   }
 
+  &__social-item {
+    transform: translatex(-1000px);
+    transition: all 1s;
+  }
+
   &__social-list {
     display: flex;
     gap: 20px;
@@ -247,6 +275,10 @@
     text-transform: uppercase;
   }
 }
+
+.active-icon {
+  transform: translateX(0);
+}
 .book {
   padding: 10px 20px;
   background-color: $color-black;
@@ -264,6 +296,13 @@
   border: 1px solid $color-blue;
   border-radius: 30px;
   cursor: pointer;
+  scale: (1);
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  scale: (1.1);
 }
 
 .text {
@@ -273,6 +312,11 @@
   max-width: 1073px;
   padding-top: 150px;
   margin-bottom: 150px;
+  transform: translateX(500px);
+  transition: all 1s;
+}
+.active-text {
+  transform: translateX(0);
 }
 @media (max-width: 1000px) {
   .text {

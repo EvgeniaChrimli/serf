@@ -348,17 +348,17 @@ template {
 
 @font-face {
   font-family: "RethinkSans-Bold";
-  src: url(/assets/fonts/RethinkSans-Bold.ttf);
+  src: url(assets/fonts/RethinkSans-Bold.ttf);
   font-weight: 600;
 }
 @font-face {
   font-family: "RethinkSans-Regular";
-  src: url(/assets/fonts/RethinkSans-Regular.ttf);
+  src: url(assets/fonts/RethinkSans-Regular.ttf);
   font-weight: 700;
 }
 @font-face {
   font-family: "RethinkSans-Medium";
-  src: url(/assets/fonts/RethinkSans-Medium.ttf);
+  src: url(assets/fonts/RethinkSans-Medium.ttf);
   font-weight: 800;
 }
 .container {
@@ -393,6 +393,11 @@ template {
   display: inline-flex;
   justify-content: center;
   margin-left: 10px;
+  scale: 1;
+  transition: all 1s;
+}
+.header__phone:hover {
+  scale: 1.1;
 }
 .header__title {
   position: relative;
@@ -407,11 +412,15 @@ template {
 }
 .header__phone-img {
   margin-right: 10px;
+  transition: transform 0.8s ease-in-out;
 }
 @media (max-width: 1000px) {
   .header__phone-img {
     margin: 0px;
   }
+}
+.header__phone-img:hover {
+  transform: rotate(360deg);
 }
 .header__phone-tel {
   margin: 0;
@@ -475,6 +484,13 @@ template {
   .menu__item-link {
     color: rgb(255, 255, 255);
   }
+}
+.menu__item {
+  transition: all 3s;
+  scale: 1;
+}
+.menu__item:hover {
+  scale: 1.1;
 }
 .menu__menu-btn {
   display: none;
@@ -550,6 +566,10 @@ template {
 .content__social {
   margin-top: 90px;
 }
+.content__social-item {
+  transform: translatex(-1000px);
+  transition: all 1s;
+}
 .content__social-list {
   display: flex;
   gap: 20px;
@@ -610,6 +630,10 @@ template {
   text-transform: uppercase;
 }
 
+.active-icon {
+  transform: translateX(0);
+}
+
 .book {
   padding: 10px 20px;
   background-color: rgb(43, 42, 41);
@@ -627,6 +651,13 @@ template {
   border: 1px solid rgb(10, 80, 122);
   border-radius: 30px;
   cursor: pointer;
+  scale: 1;
+  transition: all 0.5s;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  scale: 1.1;
 }
 
 .text {
@@ -636,6 +667,12 @@ template {
   max-width: 1073px;
   padding-top: 150px;
   margin-bottom: 150px;
+  transform: translateX(500px);
+  transition: all 1s;
+}
+
+.active-text {
+  transform: translateX(0);
 }
 
 @media (max-width: 1000px) {
@@ -671,6 +708,9 @@ template {
   text-transform: uppercase;
   font-size: 64px;
   font-family: "RethinkSans-Bold";
+  margin-bottom: 50px;
+  transform: translateX(500px);
+  transition: all 2s;
 }
 @media (max-width: 1000px) {
   .body__info-title {
@@ -698,7 +738,7 @@ template {
 .body__text {
   margin-bottom: 20px;
   font-family: "RethinkSans-Medium";
-  font-size: 16px;
+  font-size: 18px;
 }
 .body__image {
   width: 100%;
@@ -729,6 +769,10 @@ template {
     bottom: 16px;
     right: 16px;
   }
+}
+
+.info-active {
+  transform: translateX(0);
 }
 
 .activities {
