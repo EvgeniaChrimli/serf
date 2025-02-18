@@ -6,7 +6,7 @@
 }
 
 .header {
-  background-image: url(/assets/images/background2.png);
+  background-image: url(assets/images/background2.png);
   background-position: 0px -30px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -301,7 +301,6 @@
 }
 
 .btn:hover {
-  background-color: rgba(255, 255, 255, 0.8);
   scale: (1.1);
 }
 
