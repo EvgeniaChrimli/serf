@@ -1,0 +1,46 @@
+.rewiews {
+  margin-bottom: 150px;
+  &__titlegroup {
+    margin-left: 50%;
+    margin-bottom: 100px;
+    @media (max-width: 1000px) {
+      margin-left: 0;
+      margin-bottom: 50px;
+    }
+  }
+
+  &__titlegroup-sub {
+    font-size: 20px;
+    font-family: $font-family-regular;
+  }
+
+  &__titlegroup-title {
+    font-size: 64px;
+    font-family: $font-family-bold;
+  }
+
+  &__wrapper {
+    display: flex;
+    gap: 20px;
+    flex-basis: 50%;
+
+    @media (max-width: 1000px) {
+      flex-direction: column;
+    }
+  }
+
+  &__wrapper-top {
+  }
+  &__wrapper-bottom {
+    padding-top: 94px;
+
+    @media (max-width: 1000px) {
+      padding-top: 0;
+    }
+  }
+}
+.text-row {
+  display: flex;
+  gap: 190px;
+  text-align: start;
+}
