@@ -369,7 +369,7 @@ template {
 }
 
 .header {
-  background-image: url(../assets/images/background2.png);
+  background-image: url(assets/images/background2.png);
   background-position: 0px -30px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -377,6 +377,7 @@ template {
 @media (max-width: 1000px) {
   .header {
     width: 100%;
+    background: linear-gradient(90deg, #fcfcfc, #83c3e9);
   }
 }
 .header__top {
